@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contact - Nexovision Group</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#f5f7fb;
+overflow-x:hidden;
+}
+
+/* HEADER */
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:white;
+z-index:1000;
+box-shadow:0 2px 20px rgba(0,0,0,0.05);
+}
+
+.container{
+width:90%;
+max-width:1300px;
+margin:auto;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 0;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:14px;
+}
+
+.logo img{
+width:58px;
+height:58px;
+object-fit:contain;
+}
+
+.logo h2{
+font-size:32px;
+font-weight:700;
+color:#071B42;
+}
+
+.logo h2 span{
+color:#D4A017;
+}
+
+.menu{
+display:flex;
+align-items:center;
+gap:35px;
+}
+
+.menu a{
+text-decoration:none;
+color:#071B42;
+font-weight:500;
+transition:0.3s;
+}
+
+.menu a:hover{
+color:#D4A017;
+}
+
+.btn{
+background:#D4A017;
+color:white !important;
+padding:14px 28px;
+border-radius:12px;
+font-weight:600;
+transition:0.3s;
+text-decoration:none;
+display:inline-block;
+}
+
+.btn:hover{
+background:#b8860b;
+}
+
+/* CONTACT SECTION */
+
+.contact{
+padding:170px 0 100px;
+}
+
+.contact-wrapper{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px;
+align-items:center;
+}
+
+.contact-info h2{
+font-size:70px;
+line-height:1.2;
+color:#071B42;
+margin-bottom:30px;
+}
+
+.contact-info p{
+font-size:20px;
+line-height:1.9;
+color:#666;
+margin-bottom:30px;
+max-width:650px;
+}
+
+.contact-info strong{
+color:#071B42;
+}
+
+.whatsapp-btn{
+
+display:inline-flex;
+align-items:center;
+gap:12px;
+
+margin-top:20px;
+
+background-color:#25D366 !important;
+color:white !important;
+
+padding:16px 30px;
+border-radius:12px;
+
+font-weight:600;
+text-decoration:none;
+
+transition:0.3s;
+
+box-shadow:0 8px 20px rgba(37,211,102,0.25);
+
+}
+
+.whatsapp-btn img{
+
+width:24px;
+height:24px;
+
+}
+
+.whatsapp-btn:hover{
+
+background-color:#1ebe5d !important;
+
+transform:translateY(-3px);
+
+}
+/* FORM */
+
+form{
+background:white;
+padding:45px;
+border-radius:28px;
+box-shadow:0 10px 35px rgba(0,0,0,0.06);
+
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+form input,
+form textarea{
+
+width:100%;
+padding:20px;
+border:1px solid #dcdcdc;
+border-radius:14px;
+font-size:16px;
+outline:none;
+transition:0.3s;
+background:white;
+
+}
+
+form input:focus,
+form textarea:focus{
+
+border-color:#D4A017;
+box-shadow:0 0 12px rgba(212,160,23,0.2);
+
+}
+
+form textarea{
+height:180px;
+resize:none;
+}
+
+form button{
+border:none;
+cursor:pointer;
+font-size:17px;
+}
+
+/* FOOTER */
+
+footer{
+background:#071B42;
+color:white;
+text-align:center;
+padding:30px 0;
+margin-top:70px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:992px){
+
+.contact-wrapper{
+grid-template-columns:1fr;
+}
+
+.contact-info h2{
+font-size:48px;
+}
+
+.menu{
+display:none;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+
+<div class="container">
+
+<nav>
+
+<div class="logo">
+
+<img src="logo.png.jpeg">
+
+<h2>Nexovision <span>Group</span></h2>
+
+</div>
+
+<div class="menu">
+
+<a href="index.html">Home</a>
+<a href="services.html">Services</a>
+<a href="insights.html">Insights</a>
+<a href="contact.html">Contact</a>
+
+<a href="contact.html" class="btn">
+Get Consultation
+</a>
+
+</div>
+
+</nav>
+
+</div>
+
+</header>
+
+<!-- CONTACT SECTION -->
+
+<section class="contact">
+
+<div class="container">
+
+<div class="contact-wrapper">
+
+<div class="contact-info">
+
+<h2>Let's Grow Together</h2>
+
+<p>
+Need financial support or business guidance?
+Our experts are here to help your business grow.
+</p>
+
+<p><strong>Email:</strong> nexovisongroup@gmail.com</p>
+
+<p><strong>Phone:</strong> +91 75883 76763</p>
+
+<a href="https://wa.me/919021301909?text=Hello%20Nexovision%20Group,%20I%20want%20business%20consultation." 
+class="btn" 
+target="_blank">
+
+Chat on WhatsApp
+
+</a>
+
+</div>
+
+<form action="https://formspree.io/f/xredarrq" method="POST">
+
+<input 
+type="text" 
+name="name" 
+placeholder="Your Name" 
+required
+>
+
+<input 
+type="email" 
+name="email" 
+placeholder="Your Email" 
+required
+>
+
+<input 
+type="text" 
+name="phone" 
+placeholder="Phone Number" 
+required
+>
+
+<textarea 
+name="message" 
+placeholder="Your Message"
+required
+></textarea>
+
+<button type="submit" class="btn">
+Submit Inquiry
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="container">
+
+<p>
+© 2026 Nexovision Group | All Rights Reserved
+</p>
+
+</div>
+
+</footer>
+
+</body>
+
+</html>
